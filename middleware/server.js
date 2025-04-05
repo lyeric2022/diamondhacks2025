@@ -2,6 +2,8 @@ import express from 'express'
 import cors from 'cors'
 import users from './routes/users.js'
 import { auth } from 'express-openid-connect'
+import pkg from 'express-openid-connect'
+
 const PORT = process.env.PORT || 5050
 const app = express()
 
@@ -24,6 +26,11 @@ app.get('/', (req, res) => {
 	res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
   });
 
+const {requiresAuth} = pkg
+app.get('/profile', requiresAuth(), (req, res) => {
+	res.send(JSON.stringify(req.oidc.user));
+});
+  
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`)
 })
