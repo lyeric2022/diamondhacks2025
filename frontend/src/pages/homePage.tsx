@@ -1,5 +1,5 @@
-import React, { CSSProperties } from 'react';
-import NavBar from '../components/NavBar';
+import React from 'react';
+import NavBar from '../components/navBar';
 import LanguageMarquee from '../components/languageMarquee';
 import styles from './homePage.module.css';
 import { useNavigate } from 'react-router-dom';
@@ -31,12 +31,18 @@ const HomePage = () => {
         <div className={styles.bottomContainer}>
             <div className={styles.LHSBottom}>
                 <div className={styles.feature}>
-                <h4>Remembers Your Situation</h4>
-                <p>RootsAI handles household details and uses multilingual voices for non-English speakers.</p>
+                    <img src="/person.png" alt="Remembers" className={styles.featureIcon} />
+                    <div className={styles.featureText}>
+                        <h4>Remembers Your Situation</h4>
+                        <p>RootsAI handles household details and uses multilingual voices for non-English speakers.</p>
+                    </div>
                 </div>
                 <div className={styles.feature}>
-                <h4>Simplifies Applications</h4>
-                <p>Get easy guides for programs like EBT, CalFresh, housing, ESL, and more</p>
+                    <img src="/checklist.png" alt="Simplifies" className={styles.featureIcon} />
+                        <div className={styles.featureText}>
+                            <h4>Simplifies Applications</h4>
+                            <p>Get easy guides for programs like EBT, CalFresh, housing, ESL, and more</p>
+                        </div>
                 </div>
             </div>
 

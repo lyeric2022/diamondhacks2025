@@ -15,6 +15,8 @@
   max-width: 1200px;
   margin: 0 auto;
   gap: 40px;
+  /* border-width: 2px;
+  border-color:black; */
 }
 
 .LHSIntro {
@@ -22,11 +24,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 600px;
 }
 
 .LHSIntro h1 {
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 70px;
+  font-weight: 500px;
   font-family: 'Inter', sans-serif;
   margin-bottom: 20px;
 }
@@ -62,7 +65,8 @@
 }
 
 .aiHelperImage {
-  max-width: 100%;
+  max-width: 400px;
+  margin-right: -290px;
   height: auto;
 }
 
@@ -136,4 +140,36 @@
   color: rgba(0, 0, 0, 0.5);
   align-self: center;
   margin-top: 8px;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.featureIcon {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.featureText {
+  display: flex;
+  flex-direction: column;
+}
+
+.featureText h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  font-family: 'Inter', sans-serif;
+  color: black;
+}
+
+.featureText p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+  max-width: 500px;
 }
