@@ -1,0 +1,151 @@
+.container {
+    font-family: 'Inter', sans-serif;
+}
+  
+.topContainer {
+    background-color: #e9f3ec;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0rem 5rem;
+}
+  
+.LHStop {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.LHStop h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+  
+.LHStop p {
+    font-size: 1.7rem;
+    line-height: 1.8;
+    font-weight: 550;
+    max-width: 620px;
+}
+  
+.RHStop {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+  
+.imageWrapper {
+    overflow: visible;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+  
+.aiHelperImage {
+    width: 550px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: -111px;
+}
+  
+.bottomContainer {
+    background-color: white;
+    padding: 3rem 4rem;
+}
+  
+.faqSection h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    margin-left: 4rem;
+}
+  
+.questionList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+}
+  
+.questionList li {
+    padding: 1rem 0;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+  
+.questionList li:hover {
+    background-color: #f9f9f9;
+}
+  
+.questionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-left: 3rem;
+}
+  
+.answer {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+    animation: fadeIn 0.3s ease-in;
+    padding-right: 2rem;
+    margin-left: 6rem;
+    margin-right: 9rem;
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+.arrow {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-right: 3rem;
+}
+  
+.supportSection {
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+  
+.supportSection strong {
+    font-size: 1.1rem;
+}
+  
+.supportSection p {
+    margin: 0.5rem 0 1.5rem 0;
+}
+  
+.contactButton {
+    background-color: #256e3f;
+    color: white;
+    padding: 1rem 6rem;
+    border: none;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+  
+.contactButton:hover {
+    background-color: #1d5934;
+}
+  
