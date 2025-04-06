@@ -1,5 +1,5 @@
-import React, { CSSProperties } from 'react';
-import NavBar from '../components/NavBar';
+import React from 'react';
+import NavBar from '../components/navBar';
 import LanguageMarquee from '../components/languageMarquee';
 import styles from './homePage.module.css';
 import { useNavigate } from 'react-router-dom';
@@ -27,23 +27,39 @@ const HomePage = () => {
                 <img src="./aihelper.png" alt="AI Helper" className={styles.aiHelperImage} />
             </div>
         </div>
-        <hr></hr>
-        <div className='bottom-container'>
-            <div className='LHS-bottom'>
-                <div>
-                    <h4>Remembers Your Situation</h4>
+        <hr className={styles.hr} />
+        <div className={styles.bottomContainer}>
+            <div className={styles.LHSBottom}>
+                <div className={styles.feature}>
+                    <img src="/person.png" alt="Remembers" className={styles.featureIcon} />
+                    <div className={styles.featureText}>
+                        <h4>Remembers Your Situation</h4>
+                        <p>RootsAI handles household details and uses multilingual voices for non-English speakers.</p>
+                    </div>
                 </div>
-                <div>
-                    <h4>Simplifies Applications</h4>
+                <div className={styles.feature}>
+                    <img src="/checklist.png" alt="Simplifies" className={styles.featureIcon} />
+                        <div className={styles.featureText}>
+                            <h4>Simplifies Applications</h4>
+                            <p>Get easy guides for programs like EBT, CalFresh, housing, ESL, and more</p>
+                        </div>
                 </div>
             </div>
-            <div className='RHS-bottom'>
+
+            <div className={styles.RHSBottom}>
                 <h4>Government Programs</h4>
+                <div className={styles.programGrid}>
+                    <div className={styles.programItem}>Food Benefits (SNAP)</div>
+                    <div className={styles.programItem}>Student Aid (FAFSA)</div>
+                    <div className={styles.programItem}>Medicaid / Medicare</div>
+                    <div className={styles.programItem}>Social Security</div>
+                    <div className={styles.programItem}>Unemployment</div>
+                    <div className={styles.programItem}>Section 8</div>
+                    <div className={styles.programItem}>DACA</div>
+                    <span className={styles.moreText}>and more!</span>
+                </div>
             </div>
-
-        </div>
-
-        
+        </div> 
     </div>
   );
 };

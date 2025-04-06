@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import VoiceButton from "../components/VoiceButton";
 import "./VoiceChat.css";
-import NavBar from "../components/NavBar";
+import NavBar from '../components/navBar';
 
 const VoiceChat = () => {
   const navigate = useNavigate();
