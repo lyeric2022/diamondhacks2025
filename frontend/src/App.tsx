@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<DisplayUser />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/voice-chat" element={<VoiceChat />} />
       </Routes>
     </Router>

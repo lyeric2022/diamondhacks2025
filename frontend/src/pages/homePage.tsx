@@ -1,10 +1,12 @@
 import React, { CSSProperties } from 'react';
-import NavBar from '../components/navBar';
+import NavBar from '../components/NavBar';
 import LanguageMarquee from '../components/languageMarquee';
 import styles from './homePage.module.css';
+import { useNavigate } from 'react-router-dom';
 
 
 const HomePage = () => {
+    const navigate = useNavigate()
   return (
 
     <div>
@@ -18,7 +20,7 @@ const HomePage = () => {
             <div className={styles.LHSIntro}>
                 <h1>Your Guide to Government Programs</h1>
                 <h2>An AI assistant helping you apply for government benefits</h2>
-                <button>Get Started</button>
+                <button onClick={()=>{navigate("voice-chat")}}>Get Started</button>
             </div>
 
             <div className={styles.RHSIntro}>
