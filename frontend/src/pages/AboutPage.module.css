@@ -1,12 +1,12 @@
 .aboutContainer {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 60px 80px;
     font-family: 'Inter', sans-serif;
 }
 
 .aboutContainer > h1 {
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     font-weight: 700;
     margin-bottom: 60px;
@@ -20,8 +20,8 @@
 }
 
 .featureIcon {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     flex-shrink: 0;
     margin-top: 4px;
 }
@@ -32,14 +32,13 @@
 }
 
 .sectionText h2 {
-    font-size: 22px;
     font-weight: 600;
     margin: 0 0 12px 0;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .sectionText p {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 1.6;
     color: rgba(0, 0, 0, 0.7);
     margin: 0 0 12px 0;
