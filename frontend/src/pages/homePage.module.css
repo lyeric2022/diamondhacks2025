@@ -15,6 +15,8 @@
   max-width: 1200px;
   margin: 0 auto;
   gap: 40px;
+  /* border-width: 2px;
+  border-color:black; */
 }
 
 .LHSIntro {
@@ -22,11 +24,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 600px;
 }
 
 .LHSIntro h1 {
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 70px;
+  font-weight: 500px;
   font-family: 'Inter', sans-serif;
   margin-bottom: 20px;
 }
@@ -62,6 +65,111 @@
 }
 
 .aiHelperImage {
-  max-width: 100%;
+  max-width: 400px;
+  margin-right: -290px;
   height: auto;
+}
+
+.hr{
+  width: 80%;
+  margin: 40px auto; /* centers it horizontally and gives vertical spacing */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* optional: softer look */
+}
+
+.bottomContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 80px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.LHSBottom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.feature h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.feature p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  margin: 0;
+}
+
+.RHSBottom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.RHSBottom h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.programGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 16px 24px;
+}
+
+.programItem {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: white;
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.moreText {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  align-self: center;
+  margin-top: 8px;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.featureIcon {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.featureText {
+  display: flex;
+  flex-direction: column;
+}
+
+.featureText h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  font-family: 'Inter', sans-serif;
+  color: black;
+}
+
+.featureText p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+  max-width: 500px;
 }
