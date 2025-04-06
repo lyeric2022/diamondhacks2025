@@ -15,8 +15,6 @@
   max-width: 1200px;
   margin: 0 auto;
   gap: 40px;
-  /* border-width: 2px;
-  border-color:black; */
 }
 
 .LHSIntro {
@@ -25,6 +23,7 @@
   flex-direction: column;
   justify-content: center;
   width: 600px;
+  margin-left: 4rem;
 }
 
 .LHSIntro h1 {
@@ -35,7 +34,7 @@
 }
 
 .LHSIntro h2 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6);
   margin-bottom: 32px;
@@ -62,6 +61,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 5rem 9rem -4.3rem 0rem;
 }
 
 .aiHelperImage {
@@ -71,16 +71,17 @@
 }
 
 .hr{
-  width: 80%;
-  margin: 40px auto; /* centers it horizontally and gives vertical spacing */
-  border: 1px solid rgba(0, 0, 0, 0.1); /* optional: softer look */
+  width: 82%;
+  margin: 40px auto;
+  border: 1px solid rgba(0, 0, 0, 0.1); 
 }
 
 .bottomContainer {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 60px 80px;
-  gap: 40px;
+  gap: 80px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -90,6 +91,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  margin-left: 100px;
 }
 
 .feature h4 {
@@ -109,12 +111,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: 20px;
 }
 
 .RHSBottom h4 {
+  margin: 0 0 16px 0;
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 16px;
 }
 
 .programGrid {
@@ -136,7 +139,8 @@
 }
 
 .moreText {
-  font-size: 16px;
+  font-size: 20px;
+  text-align: center;
   color: rgba(0, 0, 0, 0.5);
   align-self: center;
   margin-top: 8px;
