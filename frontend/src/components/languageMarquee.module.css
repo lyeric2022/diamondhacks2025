@@ -1,0 +1,31 @@
+.languageMarqueeWrapper {
+    background-color: #2B6E3F;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+  }
+  
+  .languageMarquee {
+    display: inline-block;
+    animation: scroll-left 25s linear infinite;
+    padding: 7px; /* increases the marquee size */
+  }
+  
+  .languageMarquee span {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: white;
+    padding-right: 100%; /* Enough spacing to loop cleanly */
+  }
+  
+  /* Animation */
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
