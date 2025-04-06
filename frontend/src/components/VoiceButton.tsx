@@ -32,9 +32,7 @@ const VoiceButton = () => {
 	}
 	return(
 		<div>
-			<p>Status: {status}</p>
 			<button className="voice-button" onClick={handleRecording}>{isRecording ? "stop" : "start"}</button>
-			<audio src={mediaBlobUrl || ""} controls />
 		</div>
 	)
 }

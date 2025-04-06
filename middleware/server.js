@@ -1,7 +1,6 @@
 import express from 'express'
 import cors from 'cors'
 import users from './routes/users.js'
-import voice from './routes/voice.js'
 import { auth } from 'express-openid-connect'
 import pkg from 'express-openid-connect'
 
