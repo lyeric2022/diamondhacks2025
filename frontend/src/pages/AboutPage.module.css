@@ -1,0 +1,45 @@
+.aboutContainer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 80px;
+    font-family: 'Inter', sans-serif;
+}
+
+.aboutContainer > h1 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.section {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.featureIcon {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.sectionText {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionText h2 {
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    font-size: 25px;
+}
+
+.sectionText p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0 0 12px 0;
+}
