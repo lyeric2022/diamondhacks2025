@@ -15,6 +15,7 @@
     "dotenv": "^16.4.7",
     "express": "^5.1.0",
     "express-openid-connect": "^2.18.0",
-    "mongodb": "^6.15.0"
+    "mongodb": "^6.15.0",
+    "openai": "^4.91.1"
   }
 }
