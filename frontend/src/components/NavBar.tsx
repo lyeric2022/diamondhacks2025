@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Nav.module.css';
 import * as data from './links.json';
+import LanguageDropdown from './languageDropdown';
 const linksString = JSON.stringify(data);
 const links = JSON.parse(linksString).links;
 
@@ -38,13 +39,9 @@ const NavBar: React.FC<{}>= () => {
 
         <div className={styles['RHSdiv']}>
             {/* Language Selector Button */}
-        <div className={styles.languageSelector}>
-          <button className={styles.langButton}>
-            <img src="/americanflag.jpg" alt="US Flag" className={styles.flagIcon} />
-            <span>English</span>
-            <span className={styles.caret}>▼</span>
-          </button>
-        </div>
+            <div className={styles.languageSelector}>
+                <LanguageDropdown />
+            </div>
             {links.map((link: Link) => {
                 return(
                     <div key={link.href} className={styles['link']}>
