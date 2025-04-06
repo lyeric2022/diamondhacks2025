@@ -1,11 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import DisplayUser from './pages/DisplayUser';
+import VoiceChat from './pages/VoiceChat';
 import './App.css';
+import HomePage from './pages/homePage';
 
 function App() {
   return (
-    <DisplayUser/>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/voice-chat" element={<VoiceChat />} />
+      </Routes>
+    </Router>
   );
 }
 

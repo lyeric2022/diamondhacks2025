@@ -15,12 +15,6 @@ const VoiceButton = () => {
 				const response = await fetch(mediaBlobUrl)
 				const blob = await response.blob()
 				const file = new File([blob], "audio.webm", { type: blob.type })
-				// const transcription = await openai.audio.transcriptions.create({
-				// 	file: file,
-				// 	model: "gpt-4o-transcribe",
-				// 	response_format: "text",
-				//   });
-				// console.log(transcription)
 			}
 			stopRecording()
 			setIsRecording(false)
@@ -32,9 +26,7 @@ const VoiceButton = () => {
 	}
 	return(
 		<div>
-			<p>Status: {status}</p>
 			<button className="voice-button" onClick={handleRecording}>{isRecording ? "stop" : "start"}</button>
-			<audio src={mediaBlobUrl || ""} controls />
 		</div>
 	)
 }
