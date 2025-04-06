@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../components/navBar';
+import NavBar from '../components/NavBar';
 import LanguageMarquee from '../components/languageMarquee';
 import styles from './homePage.module.css';
 import { useNavigate } from 'react-router-dom';
